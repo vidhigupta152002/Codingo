@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html,
+body {
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: black;
+}
+.box {
+	display: flex;
+}
+.box .inner {
+	width: 250px;
+	height: 150px;
+	line-height: 120px;
+	font-size: 3em;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+     font-family: 'Russo One', sans-serif;;
+}
+.box .inner:first-child {
+	background-color: rgba(255, 0, 0, 0.658);
+	color: black;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+.box .inner:last-child {
+	background-color: indianred;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -160%;
+}
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+.user a{
+    position: absolute;
+    top:7%;
+	left:75%;
+    font-size: 1.5em;
+}
+.logout a{
+    position: absolute;
+    top:7%;
+	left:85%;
+    font-size: 1.5em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  scale: 70%;
+  margin-left: 68%;
+  margin-top: 12%;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top:30%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  border: 20px solid rgb(100, 100, 102);
+  border-radius: 30px;
+  /* box-shadow: 10px 25px 30px blue; */
+}
+
+.wrapper
+{
+    width: 100%;
+    display: flex;
+    animation: slide 13s infinite;
+}
+
+@keyframes slide{
+    0%
+    {
+        transform: translateX(0);
+    }
+    27%
+    {
+        transform: translateX(0);
+    }
+    30%
+    {
+        transform: translateX(10%);
+    }
+    33%
+    {
+        transform: translateX(-102%);
+    }
+    62%
+    {
+        transform: translateX(-102%);
+    }
+    64%
+    {
+        transform: translateX(-90%);
+    }
+    67%
+    {
+        transform: translateX(-203%);
+    }
+    90%
+    {
+        transform: translateX(-203%);
+    }
+}
+
+
+.flip-card1 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	right:70%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card1:hover .flip-card-inner1 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front1, .flip-card-back1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front1 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back1 {
+	background-color: rgb(14, 16, 35);
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back1 a{
+	  text-decoration: none;
+		color:white;
+  }
+
+
+
+
+
+  .flip-card2 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	left:40%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card2:hover .flip-card-inner2 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front2, .flip-card-back2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front2 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back2 {
+	background-color:rgb(14, 16, 35);
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back2 a{
+	  text-decoration: none;
+		color:white;
+  }
+
+
+
+
+  .flip-card3 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	left:70%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card3:hover .flip-card-inner3 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front3, .flip-card-back3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front3 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back3 {
+	background-color:rgb(14, 16, 35);
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back3 a{
+	  text-decoration: none;
+		color:white;
+  }

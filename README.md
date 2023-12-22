@@ -1,6 +1,7 @@
 # Codingo
 
 ◽ An online coding platform that is built using various concepts of Front-End Web Development like HTML, CSS, and JavaScript.
+
 ◽ The entries that are entered while signing up are saved in the database in PHP MyAdmin.
 
 # Project Demonstration
